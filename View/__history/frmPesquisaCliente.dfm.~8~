@@ -1,0 +1,80 @@
+inherited ViewPesquisaCliente: TViewPesquisaCliente
+  Caption = 'ViewPesquisaCliente'
+  ClientWidth = 615
+  ExplicitWidth = 633
+  PixelsPerInch = 96
+  TextHeight = 15
+  inherited pnlTitulo: TPanel
+    Width = 615
+    Caption = 'Pesquisa Cliente'
+  end
+  inherited dbgPesquisa: TDBGrid
+    Width = 615
+    Columns = <
+      item
+        Expanded = False
+        FieldName = 'ID_CLIENTE'
+        Title.Caption = 'Id Cliente'
+        Title.Font.Charset = DEFAULT_CHARSET
+        Title.Font.Color = clWindowText
+        Title.Font.Height = -12
+        Title.Font.Name = 'Segoe UI'
+        Title.Font.Style = [fsBold]
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'NOME'
+        Title.Caption = 'Nome'
+        Title.Font.Charset = DEFAULT_CHARSET
+        Title.Font.Color = clWindowText
+        Title.Font.Height = -12
+        Title.Font.Name = 'Segoe UI'
+        Title.Font.Style = [fsBold]
+        Width = 313
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'CIDADE'
+        Title.Caption = 'Cidade'
+        Title.Font.Charset = DEFAULT_CHARSET
+        Title.Font.Color = clWindowText
+        Title.Font.Height = -12
+        Title.Font.Name = 'Segoe UI'
+        Title.Font.Style = [fsBold]
+        Width = 175
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'UF'
+        Title.Font.Charset = DEFAULT_CHARSET
+        Title.Font.Color = clWindowText
+        Title.Font.Height = -12
+        Title.Font.Name = 'Segoe UI'
+        Title.Font.Style = [fsBold]
+        Width = 24
+        Visible = True
+      end>
+  end
+  inherited StatusBar1: TStatusBar
+    Width = 615
+    ExplicitLeft = 8
+    ExplicitTop = 298
+    ExplicitWidth = 1204
+  end
+  inherited cmbFiltro: TComboBox
+    Text = ''
+    OnChange = cmbFiltroChange
+    Items.Strings = (
+      'Id Cliente'
+      'Nome')
+  end
+  inherited btnPesquisa: TButton
+    OnClick = btnPesquisaClick
+  end
+  inherited dtsPesquisa: TDataSource
+    DataSet = ControllerClientes.qryPesquisaCliente
+  end
+end

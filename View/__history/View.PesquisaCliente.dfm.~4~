@@ -1,0 +1,96 @@
+inherited frmPesquisaCliente: TfrmPesquisaCliente
+  Caption = 'Pesquisa Cliente'
+  ClientHeight = 295
+  ClientWidth = 499
+  Position = poMainFormCenter
+  ExplicitWidth = 517
+  ExplicitHeight = 342
+  PixelsPerInch = 96
+  TextHeight = 15
+  inherited pnlTitulo: TPanel
+    Width = 499
+    Caption = 'Pesquisa Cliente'
+    ExplicitWidth = 568
+  end
+  inherited dbgPesquisa: TDBGrid
+    Width = 499
+    Columns = <
+      item
+        Expanded = False
+        FieldName = 'ID_CLIENTE'
+        Title.Caption = 'Id Cliente'
+        Title.Font.Charset = DEFAULT_CHARSET
+        Title.Font.Color = clWindowText
+        Title.Font.Height = -12
+        Title.Font.Name = 'Segoe UI'
+        Title.Font.Style = [fsBold]
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'NOME'
+        Title.Caption = 'Nome'
+        Title.Font.Charset = DEFAULT_CHARSET
+        Title.Font.Color = clWindowText
+        Title.Font.Height = -12
+        Title.Font.Name = 'Segoe UI'
+        Title.Font.Style = [fsBold]
+        Width = 313
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'CIDADE'
+        Title.Caption = 'Cidade'
+        Title.Font.Charset = DEFAULT_CHARSET
+        Title.Font.Color = clWindowText
+        Title.Font.Height = -12
+        Title.Font.Name = 'Segoe UI'
+        Title.Font.Style = [fsBold]
+        Width = 125
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'UF'
+        Title.Font.Charset = DEFAULT_CHARSET
+        Title.Font.Color = clWindowText
+        Title.Font.Height = -12
+        Title.Font.Name = 'Segoe UI'
+        Title.Font.Style = [fsBold]
+        Width = 24
+        Visible = True
+      end>
+  end
+  inherited StatusBar1: TStatusBar
+    Top = 276
+    Width = 499
+    ExplicitWidth = 568
+  end
+  inherited pnlPesquisa: TPanel
+    Width = 499
+    ExplicitWidth = 819
+    inherited btnPesquisa: TButton
+      Left = 398
+      Top = 11
+      ExplicitLeft = 398
+      ExplicitTop = 11
+    end
+    inherited cmbFiltro: TComboBox
+      Left = 66
+      Text = ''
+      OnChange = cmbFiltroChange
+      Items.Strings = (
+        'Id Cliente'
+        'Nome')
+      ExplicitLeft = 66
+    end
+    inherited edtPesquisa: TEdit
+      Width = 407
+      ExplicitWidth = 407
+    end
+  end
+  inherited dtsPesquisa: TDataSource
+    DataSet = ControllerClientes.qryPesquisaCliente
+  end
+end

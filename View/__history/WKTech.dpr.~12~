@@ -1,0 +1,22 @@
+program WKTech;
+
+uses
+  Vcl.Forms,
+  frmPrincipal in 'frmPrincipal.pas' {ViewPrincipal},
+  Controller.Conexao in '..\Controller\Controller.Conexao.pas' {ControllerConexao: TDataModule},
+  Controller.Clientes in '..\Controller\Controller.Clientes.pas' {ControllerClientes: TDataModule},
+  Model.Cliente in '..\Model\Model.Cliente.pas',
+  Model.Produto in '..\Model\Model.Produto.pas',
+  frmPesquisaBase in 'frmPesquisaBase.pas' {ViewPesquisaBase},
+  View.PesquisaCliente in 'View.PesquisaCliente.pas' {frmPesquisaCliente};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.MainFormOnTaskbar := True;
+  Application.CreateForm(TViewPrincipal, ViewPrincipal);
+  Application.CreateForm(TControllerConexao, ControllerConexao);
+  Application.CreateForm(TControllerClientes, ControllerClientes);
+  Application.Run;
+end.

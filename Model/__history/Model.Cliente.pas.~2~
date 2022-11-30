@@ -1,0 +1,60 @@
+unit Model.Cliente;
+
+interface
+
+type
+  TCliente = class
+  private
+    FUF: string;
+    FId_Cliente: integer;
+    FNome: string;
+    FCidade: string;
+    procedure SetCidade(const Value: string);
+    procedure SetId_Cliente(const Value: integer);
+    procedure SetNome(const Value: string);
+    procedure SetUF(const Value: string);
+  public
+   Destructor Destroy;
+   Constructor Create;
+   property Id_Cliente: integer read FId_Cliente write SetId_Cliente;
+   property Nome: string read FNome write SetNome;
+   property Cidade: string read FCidade write SetCidade;
+   property UF: string read FUF write SetUF;
+
+  end;
+
+implementation
+
+{ TCliente }
+
+constructor TCliente.Create;
+begin
+
+end;
+
+destructor TCliente.Destroy;
+begin
+
+end;
+
+procedure TCliente.SetCidade(const Value: string);
+begin
+  FCidade := Value;
+end;
+
+procedure TCliente.SetId_Cliente(const Value: integer);
+begin
+  FId_Cliente := Value;
+end;
+
+procedure TCliente.SetNome(const Value: string);
+begin
+  FNome := Value;
+end;
+
+procedure TCliente.SetUF(const Value: string);
+begin
+  FUF := Value;
+end;
+
+end.

@@ -1,0 +1,30 @@
+object ControllerClientes: TControllerClientes
+  Height = 251
+  Width = 486
+  PixelsPerInch = 120
+  object fdCliente: TFDTable
+    Connection = ControllerConexao.fdConexao
+    TableName = 'wktech.clientes'
+    Left = 208
+    Top = 104
+  end
+  object qryPesquisaCliente: TFDQuery
+    Connection = ControllerConexao.fdConexao
+    SQL.Strings = (
+      'SELECT '
+      'ID_CLIENTE,'
+      'NOME, '
+      'CIDADE, '
+      'UF'
+      'FROM CLIENTES'
+      'WHERE &CONDICAO')
+    Left = 336
+    Top = 104
+    MacroData = <
+      item
+        Value = Null
+        Name = 'CONDICAO'
+        DataType = mdIdentifier
+      end>
+  end
+end

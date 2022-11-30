@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2022/04/23 16:17:53.000.037,=E:\Massini\Documentos\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2022/11/09 16:33:48.000.842,=E:\Massini\Documentos\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2022/11/09 16:34:02.000.428,E:\Massini\Documentos\Embarcadero\Studio\Projects\Unit1.dfm=C:\CrisProject\WKTech\View\frmPrincipal.dfm</Transaction>
+    <Transaction>2022/11/09 16:34:02.000.428,E:\Massini\Documentos\Embarcadero\Studio\Projects\Unit1.pas=C:\CrisProject\WKTech\View\frmPrincipal.pas</Transaction>
+    <Transaction>2022/11/09 16:34:11.000.113,E:\Massini\Documentos\Embarcadero\Studio\Projects\Project1.dproj=C:\CrisProject\WKTech\View\WKTech.dproj</Transaction>
+    <Transaction>2022/11/09 17:01:13.000.753,=C:\CrisProject\WKTech\View\Unit1.pas</Transaction>
+    <Transaction>2022/11/09 17:01:31.000.643,C:\CrisProject\WKTech\View\Unit1.dfm=C:\CrisProject\WKTech\Controller\Controller.Conexao.dfm</Transaction>
+    <Transaction>2022/11/09 17:01:31.000.643,C:\CrisProject\WKTech\View\Unit1.pas=C:\CrisProject\WKTech\Controller\Controller.Conexao.pas</Transaction>
+    <Transaction>2022/11/10 10:47:42.000.032,=C:\CrisProject\WKTech\View\Unit1.pas</Transaction>
+    <Transaction>2022/11/10 10:48:31.000.171,C:\CrisProject\WKTech\View\Unit1.pas=C:\CrisProject\WKTech\Controller\Controller.Clientes.pas</Transaction>
+    <Transaction>2022/11/10 10:48:31.000.171,C:\CrisProject\WKTech\View\Unit1.dfm=C:\CrisProject\WKTech\Controller\Controller.Clientes.dfm</Transaction>
+    <Transaction>2022/11/10 12:54:21.000.374,=C:\CrisProject\WKTech\View\Unit1.pas</Transaction>
+    <Transaction>2022/11/10 12:54:41.000.706,C:\CrisProject\WKTech\View\Unit1.pas=C:\CrisProject\WKTech\Model\Model.Cliente.pas</Transaction>
+    <Transaction>2022/11/10 12:58:36.000.937,=C:\CrisProject\WKTech\View\Unit1.pas</Transaction>
+    <Transaction>2022/11/10 12:58:49.000.754,C:\CrisProject\WKTech\View\Unit1.pas=C:\CrisProject\WKTech\Model\Model.Produto.pas</Transaction>
+    <Transaction>2022/11/10 13:02:53.000.889,=C:\CrisProject\WKTech\View\Unit1.pas</Transaction>
+    <Transaction>2022/11/10 13:03:04.000.323,C:\CrisProject\WKTech\View\Unit1.pas=C:\CrisProject\WKTech\View\frmPesquisaBase.pas</Transaction>
+    <Transaction>2022/11/10 13:03:04.000.323,C:\CrisProject\WKTech\View\Unit1.dfm=C:\CrisProject\WKTech\View\frmPesquisaBase.dfm</Transaction>
+    <Transaction>2022/11/10 13:20:08.000.780,=C:\CrisProject\WKTech\View\Unit1.pas</Transaction>
+    <Transaction>2022/11/10 13:20:22.000.226,C:\CrisProject\WKTech\View\Unit1.pas=C:\CrisProject\WKTech\View\frmPesquisaCliente.pas</Transaction>
+    <Transaction>2022/11/10 13:20:22.000.226,C:\CrisProject\WKTech\View\Unit1.dfm=C:\CrisProject\WKTech\View\frmPesquisaCliente.dfm</Transaction>
+    <Transaction>2022/11/10 13:51:03.000.196,C:\CrisProject\WKTech\View\frmPesquisaCliente.pas=C:\CrisProject\WKTech\View\ViewPesquisaCliente.pas</Transaction>
+    <Transaction>2022/11/10 13:51:03.000.196,C:\CrisProject\WKTech\View\frmPesquisaCliente.dfm=C:\CrisProject\WKTech\View\ViewPesquisaCliente.dfm</Transaction>
+    <Transaction>2022/11/10 13:51:33.000.374,C:\CrisProject\WKTech\View\ViewPesquisaCliente.pas=C:\CrisProject\WKTech\View\View.PesquisaCliente.pas</Transaction>
+    <Transaction>2022/11/10 13:51:33.000.374,C:\CrisProject\WKTech\View\ViewPesquisaCliente.dfm=C:\CrisProject\WKTech\View\View.PesquisaCliente.dfm</Transaction>
+    <Transaction>2022/11/10 16:03:24.815,=C:\CrisProject\WKTech\View\Unit1.pas</Transaction>
+    <Transaction>2022/11/10 16:03:35.408,C:\CrisProject\WKTech\View\View.PesquisaProduto.pas=C:\CrisProject\WKTech\View\Unit1.pas</Transaction>
+    <Transaction>2022/11/10 16:03:35.408,C:\CrisProject\WKTech\View\View.PesquisaProduto.dfm=C:\CrisProject\WKTech\View\Unit1.dfm</Transaction>
+    <Transaction>2022/11/10 16:04:03.167,=C:\CrisProject\WKTech\View\Unit1.pas</Transaction>
+    <Transaction>2022/11/10 16:04:14.541,C:\CrisProject\WKTech\Controller\Controller.Produto.dfm=C:\CrisProject\WKTech\View\Unit1.dfm</Transaction>
+    <Transaction>2022/11/10 16:04:14.541,C:\CrisProject\WKTech\Controller\Controller.Produto.pas=C:\CrisProject\WKTech\View\Unit1.pas</Transaction>
+    <Transaction>2022/11/10 16:17:57.549,=C:\CrisProject\WKTech\View\Unit1.pas</Transaction>
+    <Transaction>2022/11/10 16:18:10.435,C:\CrisProject\WKTech\Model\Model.Util.pas=C:\CrisProject\WKTech\View\Unit1.pas</Transaction>
+    <Transaction>2022/11/10 16:26:04.547,C:\CrisProject\WKTech\Controller\Controller.Produtos.dfm=C:\CrisProject\WKTech\Controller\Controller.Produto.dfm</Transaction>
+    <Transaction>2022/11/10 16:26:04.547,C:\CrisProject\WKTech\Controller\Controller.Produtos.pas=C:\CrisProject\WKTech\Controller\Controller.Produto.pas</Transaction>
+    <Transaction>2022/11/10 16:45:58.901,C:\CrisProject\WKTech\Model\Model.Util.pas=</Transaction>
+    <Transaction>2022/11/10 16:46:23.403,=C:\CrisProject\WKTech\Model\Model.Util.pas</Transaction>
+  </Transactions>
+</BorlandProject>

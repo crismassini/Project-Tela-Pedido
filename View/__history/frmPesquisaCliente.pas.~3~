@@ -1,0 +1,25 @@
+unit frmPesquisaCliente;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, frmPesquisaBase, Data.DB, Vcl.StdCtrls,
+  Vcl.ComCtrls, Vcl.Grids, Vcl.DBGrids, Vcl.ExtCtrls;
+
+type
+  TViewPesquisaCliente = class(TViewPesquisaBase)
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  ViewPesquisaCliente: TViewPesquisaCliente;
+
+implementation
+
+{$R *.dfm}
+
+end.

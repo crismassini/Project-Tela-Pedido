@@ -1,0 +1,25 @@
+unit View.PesquisaProduto;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, frmPesquisaBase, Data.DB, Vcl.StdCtrls,
+  Vcl.ComCtrls, Vcl.Grids, Vcl.DBGrids, Vcl.ExtCtrls;
+
+type
+  TViewPesquisaBase1 = class(TViewPesquisaBase)
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  ViewPesquisaBase1: TViewPesquisaBase1;
+
+implementation
+
+{$R *.dfm}
+
+end.

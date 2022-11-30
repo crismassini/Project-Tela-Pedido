@@ -1,0 +1,47 @@
+unit Controller.Clientes;
+
+interface
+
+uses
+  System.SysUtils, System.Classes, FireDAC.Stan.Intf, FireDAC.Stan.Option,
+  FireDAC.Stan.Param, FireDAC.Stan.Error, FireDAC.DatS, FireDAC.Phys.Intf,
+  FireDAC.DApt.Intf, Data.DB, FireDAC.Comp.DataSet, FireDAC.Comp.Client,
+  FireDAC.Stan.Async, FireDAC.DApt;
+
+type
+  TControllerClientes = class(TDataModule)
+    fdCliente: TFDTable;
+    qryPesquisaCliente: TFDQuery;
+    qryPesquisaClienteID_CLIENTE: TIntegerField;
+    qryPesquisaClienteNOME: TStringField;
+    qryPesquisaClienteCIDADE: TStringField;
+    qryPesquisaClienteUF: TStringField;
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+    procedure CarregarClientes(ANomeCampo, AValor: string);
+  end;
+
+var
+  ControllerClientes: TControllerClientes;
+
+implementation
+
+uses
+  Controller.Conexao;
+
+
+{%CLASSGROUP 'Vcl.Controls.TControl'}
+
+{$R *.dfm}
+
+{ TControllerClientes }
+
+procedure TControllerClientes.CarregarClientes(ANomeCampo, AValor: string);
+begin
+  qryPesquisaCliente.MacroByName('CONDICAO').AsRaw := ANomeCampo + ' = '' ' + AValor + '';
+  qryPesquisaCliente.Open;
+end;
+
+end.

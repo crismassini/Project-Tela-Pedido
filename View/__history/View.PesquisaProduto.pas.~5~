@@ -1,0 +1,52 @@
+unit View.PesquisaProduto;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, frmPesquisaBase, Data.DB, Vcl.StdCtrls,
+  Vcl.ComCtrls, Vcl.Grids, Vcl.DBGrids, Vcl.ExtCtrls;
+
+type
+  TfrmPesquisaProduto = class(TViewPesquisaBase)
+    procedure cmbFiltroChange(Sender: TObject);
+    procedure FormShow(Sender: TObject);
+    procedure btnPesquisaClick(Sender: TObject);
+  private
+    { Private declarations }
+    FNomeCampo: string;
+    procedure ListarProdutos;
+  public
+    { Public declarations }
+  end;
+
+var
+  frmPesquisaProduto: TfrmPesquisaProduto;
+
+implementation
+
+{$R *.dfm}
+
+procedure TfrmPesquisaProduto.btnPesquisaClick(Sender: TObject);
+begin
+  inherited;
+  ListarProdutos;
+end;
+
+procedure TfrmPesquisaProduto.cmbFiltroChange(Sender: TObject);
+begin
+  inherited;
+  if cmbFiltro.ItemIndex = 0 then
+    FNomeCampo := 'ID_PRODUTO'
+  else
+    FNomeCampo := 'DESCRICAO';
+end;
+
+procedure TfrmPesquisaProduto.FormShow(Sender: TObject);
+begin
+  inherited;
+  cmbFiltro.ItemIndex := 1;
+  FNomeCampo := 'DESCRICAO';
+end;
+
+end.

@@ -1,0 +1,11 @@
+object ControllerClientes: TControllerClientes
+  Height = 251
+  Width = 486
+  PixelsPerInch = 120
+  object fdCliente: TFDTable
+    Connection = ControllerConexao.fdConexao
+    TableName = 'wktech.clientes'
+    Left = 56
+    Top = 104
+  end
+end

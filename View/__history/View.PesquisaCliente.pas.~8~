@@ -1,0 +1,68 @@
+unit View.PesquisaCliente;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, frmPesquisaBase, Data.DB, Vcl.StdCtrls,
+  Vcl.ComCtrls, Vcl.Grids, Vcl.DBGrids, Vcl.ExtCtrls;
+
+type
+  TfrmPesquisaCliente = class(TViewPesquisaBase)
+    Panel1: TPanel;
+    Panel2: TPanel;
+    Label3: TLabel;
+    Label4: TLabel;
+    Button1: TButton;
+    ComboBox1: TComboBox;
+    Edit1: TEdit;
+    Panel3: TPanel;
+    Label5: TLabel;
+    Label6: TLabel;
+    Button2: TButton;
+    ComboBox2: TComboBox;
+    Edit2: TEdit;
+    procedure cmbFiltroChange(Sender: TObject);
+    procedure btnPesquisaClick(Sender: TObject);
+    procedure FormShow(Sender: TObject);
+  private
+    { Private declarations }
+    FNomeCampo: String;
+  public
+    { Public declarations }
+  end;
+
+var
+  frmPesquisaCliente: TfrmPesquisaCliente;
+
+implementation
+
+uses
+  Controller.Clientes;
+
+{$R *.dfm}
+
+procedure TfrmPesquisaCliente.btnPesquisaClick(Sender: TObject);
+begin
+  inherited;
+  if not ControllerClientes.CarregarClientes(FNomeCampo, edtPesquisa.Text) then
+    ShowMessage('Nenhum cliente encontrado para os parâmetros selecionados.');
+end;
+
+procedure TfrmPesquisaCliente.cmbFiltroChange(Sender: TObject);
+begin
+  inherited;
+  if cmbFiltro.ItemIndex = 0 then
+    FNomeCampo := 'ID_CLIENTE'
+  else
+    FNomeCampo := 'NOME';
+end;
+
+procedure TfrmPesquisaCliente.FormShow(Sender: TObject);
+begin
+  inherited;
+  cmbFiltro.ItemIndex := 1;
+  FNomeCampo := 'NOME';
+end;
+
+end.

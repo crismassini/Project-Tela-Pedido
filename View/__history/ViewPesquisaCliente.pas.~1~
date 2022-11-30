@@ -1,0 +1,46 @@
+unit ViewPesquisaCliente;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, frmPesquisaBase, Data.DB, Vcl.StdCtrls,
+  Vcl.ComCtrls, Vcl.Grids, Vcl.DBGrids, Vcl.ExtCtrls;
+
+type
+  TViewPesquisaCliente = class(TViewPesquisaBase)
+    procedure cmbFiltroChange(Sender: TObject);
+    procedure btnPesquisaClick(Sender: TObject);
+  private
+    { Private declarations }
+    FNomeCampo: String;
+  public
+    { Public declarations }
+  end;
+
+var
+  ViewPesquisaCliente: TViewPesquisaCliente;
+
+implementation
+
+uses
+  Controller.Clientes;
+
+{$R *.dfm}
+
+procedure TViewPesquisaCliente.btnPesquisaClick(Sender: TObject);
+begin
+  inherited;
+  ControllerClientes.CarregarClientes(FNomeCampo, Trim(edtPesquisa.Text));
+end;
+
+procedure TViewPesquisaCliente.cmbFiltroChange(Sender: TObject);
+begin
+  inherited;
+  if cmbFiltro.ItemIndex = 0 then
+    FNomeCampo := 'ID_CLIENTE'
+  else
+    FNomeCampo := 'NOME';
+end;
+
+end.
