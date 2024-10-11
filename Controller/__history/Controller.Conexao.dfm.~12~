@@ -1,6 +1,7 @@
-object Conexao: TConexao
-  Height = 251
-  Width = 486
+object ControllerConexao: TControllerConexao
+  OnCreate = DataModuleCreate
+  Height = 218
+  Width = 458
   PixelsPerInch = 120
   object fdConexao: TFDConnection
     Params.Strings = (
@@ -10,12 +11,18 @@ object Conexao: TConexao
       'Server=localhost'
       'User_Name=root')
     LoginPrompt = False
+    Transaction = fdTransacao
     Left = 80
     Top = 72
   end
   object fdTransacao: TFDTransaction
     Connection = fdConexao
     Left = 184
+    Top = 72
+  end
+  object FDPhysMySQLDriverLink1: TFDPhysMySQLDriverLink
+    VendorLib = 'C:\CrisProject\WKTech\Bin\libmysql.dll'
+    Left = 320
     Top = 72
   end
 end

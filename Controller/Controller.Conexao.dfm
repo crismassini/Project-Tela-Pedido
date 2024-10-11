@@ -2,8 +2,8 @@ object ControllerConexao: TControllerConexao
   OnCreate = DataModuleCreate
   Height = 218
   Width = 458
-  PixelsPerInch = 120
-  object fdConexao: TFDConnection
+  PixelsPerInch = 96
+  object FConexao: TFDConnection
     Params.Strings = (
       'DriverID=MySQL'
       'Database=wktech'
@@ -16,7 +16,7 @@ object ControllerConexao: TControllerConexao
     Top = 72
   end
   object fdTransacao: TFDTransaction
-    Connection = fdConexao
+    Connection = FConexao
     Left = 184
     Top = 72
   end
